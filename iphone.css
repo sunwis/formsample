@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* reset */
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p,
+header, hgroup, section, article, aside, hgroup, footer, figure, figcaption, nav {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.0;
+    -webkit-text-size-adjust: none;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-spacing: 0;
+    empty-cells: show;
+}
+
+/* style */
+
+body {
+    color: #333;
+    background-color: #333;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#000),to(#333));
+    font-family: 
+        "ヒラギノ角ゴ Pro W3",
+	    "Hiragino Kaku Gothic Pro", 
+	    "メイリオ", 
+	    Meiryo, 
+	    Osaka, 
+	    "ＭＳ Ｐゴシック", 
+	    "MS PGothic", 
+	    sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.global-header {
+ padding: 10px 0 30px 0;
+ background-color: #333;
+ background-image: -webkit-gradient(linear,left top,left bottom,from(#000),to(#333));
+ text-align: center;
+}
+
+.section-heading {
+ margin-bottom: 5px;
+ padding-left: 20px;
+ background: url(http://jsrun.it/assets/t/j/H/4/tjH4h.png) left center no-repeat;
+ font-size: 16px;
+}
+
+.introduction {
+ margin-bottom: 20px;
+ font-size: 14px;
+}
+
+.require {
+ padding: 3px;
+ vertical-align: text-bottom;
+ color: #FFF;
+ background-color: #f90;
+ font-weight: bold;
+ font-size: 11px;
+ -webkit-border-radius: 4px;
+ border-radius: 4px;
+}
+
+.contact-form {
+ margin: -20px 10px 10px 10px;
+ padding: 10px;
+ border: 1px solid #FFF;
+ background-color: #eee;
+ background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#eee));
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ -webkit-box-shadow: 0 0 3px #333;
+ box-shadow: 0 0 3px #333;
+}
+
+.contact-form dl {
+    margin-bottom: 20px;
+}
+
+.contact-form dt {
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+.contact-form dd {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    width: 150px;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="url"] {
+    width: 250px;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    font-weight:bold;
+    border: 1px solid #FFF;
+    width: auto;
+    color: #FFF;
+    background-color: #D9F5F3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF9900), color-stop(48%, #FF8600), color-stop(52%, #FF7700), to(#FF6600));
+    font-size: 16px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 3px #333333;
+    box-shadow: 0 0 3px #333333;
+}
+
+.submit {
+    text-align: center;
+}
+
+.contact-call {
+    margin: 10px 0 20px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.contact-call dl {
+    margin-bottom: 10px;
+}
+
+.contact-call dt,
+.contact-call dd {
+    display: inline; 
+}
+
+.contact-call time {
+    margin: 0 2px;
+}
+
+.call a {
+    padding: 5px 0 5px 20px;
+    border: 1px solid #FFF;
+    display: inline-block;
+    color: #FFF;
+    background-color: #006699;
+    background-image: url(http://jsrun.it/assets/3/4/9/l/349ld.png), -webkit-gradient(linear, left top, left bottom, from(#66CC00), color-stop(48%, #66B400), color-stop(52%, #66A700), to(#669900));
+    background-repeat:no-repeat;
+    background-position:-10px 5px,top left;
+    font-size: 16px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 3px #333;
+    box-shadow: 0 0 3px #333;
+    text-decoration:none;
+    width:150px;
+    font-weight:bold;
+    -webkit-animation: shining 2s infinite;
+}
+
+@-webkit-keyframes shining {
+    0% { -webkit-box-shadow: 0 0 1px #FFD700; box-shadow: 0 0 1px #FFD700; }
+    50% { -webkit-box-shadow: 0 0 20px #FFD700; box-shadow: 0 0 20px #FFD700;}
+    100% { -webkit-box-shadow: 0 0 1px #FFD700; box-shadow: 0 0 1px #FFD700;}
+}
+
+.global-footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.global-footer li {
+    display: inline;
+}
+
+.global-footer a {
+    margin: 0 3px;
+    color: #fff;
+}

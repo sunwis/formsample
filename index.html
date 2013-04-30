@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>スマートフォン対応デモサイト【4】フォーム</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />  
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="iphone.css" media="screen">
+<script type="text/javascript" src="inst.js"></script>
+</head>
+<body>
+<header class="global-header">
+<p style="color:white">半蔵門支店</p>
+</header>
+
+<section class="contact-form">
+<h2 class="section-heading">会員登録フォーム</h2>
+</p><span class="require">必須</span>となっている項目は必ずご入力ください。</p>
+</br>
+	<form method="post" action="#">
+		<dl>
+			<dt>お名前&nbsp;<span class="require">必須</span></dt>
+			<dd><input id="frontname" type="text" placeholder="例) アイティフォー太郎"></dd>
+			<dt>メールアドレス&nbsp;<span class="require">必須</span></dt>
+			<dd><input id="email" type="email" placeholder="例）mail@example.com" autocapitalize="off"></dd>
+			<dt>電話番号&nbsp;<span class="require">必須</span></dt>
+			<dd><input id="tel" type="tel" placeholder="例）0123456789"></dd>
+			<dt>ご職業&nbsp;<span class="require">必須</span></dt>
+			<dd>
+			<ul class="radiolist">
+				<li>
+					<label><input type="radio" id="industry_01" value="小売業" name="industry">主婦</label>
+				</li>
+				<li>
+					<label><input type="radio" id="industry_02" value="サービス業" name="industry">学生</label>
+				</li>
+				<li>
+					<label><input type="radio" id="industry_03" value="官公庁" name="industry">会社員</label>
+				</li>
+				<li>
+					<label><input type="radio" id="industry_08" value="その他" name="industry">その他</label>
+				</li>
+			</ul>
+			</dd>
+			<dt>当店舗利用日数/1ヶ月</dt>
+			<dd><select id="pageview" name="pageview">
+				<option value="">▼選んでください</option>
+				<option value="0">わからない</option>
+				<option value="1">～1日</option>
+				<option value="5">～5日</option>
+				<option value="10">～10日</option>
+				<option value="50">～20日</option>
+				<option value="100">～30日</option>
+				<option value="250">～毎日</option>
+			</select></dd>
+		</dl>
+		
+		<div class="submit">
+		<input type="submit" onclick="inst()" value="登録！！">
+		</div>
+	</form>
+</section>
+<footer class="global-footer">
+</footer>
+</body>
+</html>
